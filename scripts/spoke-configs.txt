@@ -1,0 +1,51 @@
+# ==========================================
+# CONFIGURACIÓN SPOKE 1 (FGT-2)
+# ==========================================
+
+config system interface
+    edit "port1"
+        set alias "To-Hub"
+        set mode static
+        set ip 192.168.100.2 255.255.255.255
+        set allowaccess ping
+    next
+    edit "port2"
+        set alias "LAN-Sucursal1"
+        set mode static
+        set ip 172.16.10.1 255.255.255.0
+        set allowaccess ping https
+    next
+end
+
+config router static
+    edit 1
+        set gateway 192.168.100.1
+        set device "port1"
+    next
+end
+
+# ==========================================
+# CONFIGURACIÓN SPOKE 2 (FGT-3)
+# ==========================================
+
+config system interface
+    edit "port1"
+        set alias "To-Hub"
+        set mode static
+        set ip 192.168.100.6 255.255.255.255
+        set allowaccess ping
+    next
+    edit "port2"
+        set alias "LAN-Sucursal2"
+        set mode static
+        set ip 172.16.20.1 255.255.255.0
+        set allowaccess ping https
+    next
+end
+
+config router static
+    edit 1
+        set gateway 192.168.100.5
+        set device "port1"
+    next
+end

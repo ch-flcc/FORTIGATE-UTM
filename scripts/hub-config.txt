@@ -1,0 +1,51 @@
+# ==========================================
+# CONFIGURACIÓN DE INTERFACES - HUB (FGT-1)
+# ==========================================
+
+config system interface
+    edit "port1"
+        set alias "WAN-Internet"
+        set mode static
+        set ip 192.168.18.100 255.255.255.0
+        set allowaccess ping https ssh
+    next
+    edit "port2"
+        set alias "To-Spoke1"
+        set mode static
+        set ip 192.168.100.1 255.255.255.255
+        set allowaccess ping
+    next
+    edit "port3"
+        set alias "To-Spoke2"
+        set mode static
+        set ip 192.168.100.5 255.255.255.255
+        set allowaccess ping
+    next
+    edit "port10"
+        set alias "LAN-SedeCentral"
+        set mode static
+        set ip 10.10.10.1 255.255.255.0
+        set allowaccess ping https ssh
+    next
+end
+
+# ==========================================
+# ENRUTAMIENTO ESTÁTICO (GATEWAY REAL)
+# ==========================================
+
+config router static
+    edit 1
+        set gateway 192.168.18.1
+        set device "port1"
+    next
+    edit 2
+        set dst 172.16.10.0 255.255.255.0
+        set gateway 192.168.100.2
+        set device "port2"
+    next
+    edit 3
+        set dst 172.16.20.0 255.255.255.0
+        set gateway 192.168.100.6
+        set device "port3"
+    next
+end
