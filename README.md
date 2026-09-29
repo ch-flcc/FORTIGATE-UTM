@@ -235,7 +235,7 @@ La infraestructura diseñada transforma una red distribuida y sin controles unif
 |---|---|
 | **FortiOS 7.x** | Sistema operativo de los firewalls FortiGate VM |
 | **GNS3** | Plataforma de simulación de redes |
-| **Cisco Switch L2** | Simulación de segmentos WAN/LAN |
+| **Switch L2** | Simulación de segmentos WAN/LAN |
 | **Docker (WebTerm)** | Contenedores para pruebas de navegación web |
 | **FortiClient** | Cliente VPN SSL para acceso remoto |
 
