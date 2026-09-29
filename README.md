@@ -129,7 +129,9 @@ Las capturas siguientes muestran la configuración de interfaces de red y la cre
 
 Se implementaron políticas de Firewall con NAT habilitado para permitir que los dispositivos de las sucursales naveguen a través de la IP pública del HUB.
 
-![Políticas de NAT configuradas en FortiGate](docs/img/captura 4-Políticas de NAT.png)
+
+<img width="1919" height="1000" alt="image" src="https://github.com/user-attachments/assets/b8493b8a-8373-412f-916b-224f8cfdd1fb" />
+
 
 ---
 
