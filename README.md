@@ -129,9 +129,7 @@ Las capturas siguientes muestran la configuración de interfaces de red y la cre
 
 Se implementaron políticas de Firewall con NAT habilitado para permitir que los dispositivos de las sucursales naveguen a través de la IP pública del HUB.
 
-
 <img width="1919" height="1000" alt="image" src="https://github.com/user-attachments/assets/b8493b8a-8373-412f-916b-224f8cfdd1fb" />
-
 
 ---
 
@@ -156,7 +154,7 @@ Se configuraron filtros de navegación para restringir el acceso a sitios de rie
 
 Se implementó **Application Control** para identificar, monitorear y restringir las aplicaciones en uso dentro de la red, incluyendo software P2P y aplicaciones no corporativas.
 
-
+<img width="1919" height="966" alt="image" src="https://github.com/user-attachments/assets/07ae369b-4cca-4804-89c8-9cdc68f8f5d4" />
 
 **Capacidades habilitadas:**
 - ✅ Detección de aplicaciones potencialmente peligrosas.
