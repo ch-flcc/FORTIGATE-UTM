@@ -145,7 +145,7 @@ Toda la inspección fue centralizada en el HUB, lo que simplifica la administrac
 
 Se configuraron filtros de navegación para restringir el acceso a sitios de riesgo, páginas no autorizadas y redes sociales, reduciendo la exposición a phishing y optimizando el ancho de banda.
 
-![Bloqueo de redes sociales mediante perfil UTM](docs/img/captura 5-UTM-red-social.png)
+<img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/cef4e459-ed50-456d-8201-297a582b19e9" />
 
 **Beneficios implementados:**
 - ✅ Bloqueo de categorías maliciosas y sitios de phishing.
@@ -156,7 +156,7 @@ Se configuraron filtros de navegación para restringir el acceso a sitios de rie
 
 Se implementó **Application Control** para identificar, monitorear y restringir las aplicaciones en uso dentro de la red, incluyendo software P2P y aplicaciones no corporativas.
 
-![Política de navegación y control de aplicaciones UTM](docs/img/captura 6-UTM-politoica-navegacion.png)
+
 
 **Capacidades habilitadas:**
 - ✅ Detección de aplicaciones potencialmente peligrosas.
